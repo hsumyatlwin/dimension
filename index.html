@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang ="ja">
+<head> 
+	<meta charset ="UTF-8">
+	<meta name="Author" content="ke2b03,スーミャッルイン">
+	<title>単位変換（長さ）簡易版</title>
+</head>
+<body onload="iniFocus()">
+    <h1>単位交換（長さ）</h1>
+    <h2>簡易版</h2>
+    <h3>※注意</h3>
+    <p>当ページは，医療・公務・商業・設計等，精度を求められるものへ
+        の使用について一切保証ほしません。</p>
+    <form name ="frmOne">
+        <input type="text" name="txtData" size="10">
+        <select name="selUnit" onchange="ex(this.form,this)" onblur="iniFocus()">
+            <option value="mm">mm ミリメートル</option>
+            <option value="cm">cm センチメートル</option>
+            <option value="m">m メートル</option>
+            <option value="km">km キロメートル</option>
+            <option value="in">in インチ</option>
+            <option value="ft">ft フィート</option>
+            <option value="yd">yd ヤード</option>
+            <option value="ch">ch チェイン</option>
+            <option value="fur">fur ファーロング</option>
+            <option value="mile">mile マイル</option>
+        </select>
+    </form>
+    <form  name ="frmTwo">
+        <input type="text" size="20">mm<br>
+        <input type="text" size="20">cm<br>
+        <input type="text" size="20">m<br>
+        <input type="text" size="20">km<br>
+        <input type="text" size="20">in<br>
+        <input type="text" size="20">ft<br>
+        <input type="text" size="20">yd<br>
+        <input type="text" size="20">ch<br>
+        <input type="text" size="20">fur<br>
+        <input type="text" size="20">mile<br>
+    </form>
+    <script src="script.js">
+    </script>
+</body>
+</html> 
